@@ -1,6 +1,6 @@
 import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
 import { createGraph } from "https://deno.land/x/deno_graph@0.57.1/mod.ts";
-import { CACHE } from "../src/paths.ts";
+import { CACHE } from "./paths.ts";
 
 export async function installTreeSitter() {
   // Cache tree-sitter-cli

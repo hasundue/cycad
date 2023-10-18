@@ -16,10 +16,6 @@
       }
     }
   },
-  "redirects": {
-    "https://deno.land/x/deno_graph/mod.ts": "https://deno.land/x/deno_graph@0.57.1/mod.ts",
-    "https://deno.land/x/dir/mod.ts": "https://deno.land/x/dir@1.5.1/mod.ts"
-  },
   "remote": {
     "https://deno.land/std@0.140.0/_util/assert.ts": "e94f2eb37cebd7f199952e242c77654e43333c1ac4c5c700e929ea3aa5489f74",
     "https://deno.land/std@0.140.0/_util/os.ts": "3b4c6e27febd119d36a416d7a97bd3b0251b77c88942c8f16ee5953ea13e2e49",
@@ -104,6 +100,7 @@
     "https://deno.land/std@0.204.0/assert/assert_equals.ts": "d8ec8a22447fbaf2fc9d7c3ed2e66790fdb74beae3e482855d75782218d68227",
     "https://deno.land/std@0.204.0/assert/assertion_error.ts": "4d0bde9b374dfbcbe8ac23f54f567b77024fb67dbb1906a852d67fe050d42f56",
     "https://deno.land/std@0.204.0/assert/equal.ts": "9f1a46d5993966d2596c44e5858eec821859b45f783a5ee2f7a695dfc12d8ece",
+    "https://deno.land/std@0.204.0/collections/distinct.ts": "01595bd8e608a5e2de8a8631055587e6f01d68861e463eef34f8e295713500b8",
     "https://deno.land/std@0.204.0/fmt/colors.ts": "c51c4642678eb690dcf5ffee5918b675bf01a33fba82acf303701ae1a4f8c8d9",
     "https://deno.land/x/dax@0.35.0/mod.ts": "3fc382546bf3c7b90aa458aa144be7c6e8aed3e8c2680289f9c8694d986b7247",
     "https://deno.land/x/dax@0.35.0/src/command.ts": "6e7db06015b4ad6decbf59cc5fcb6bd4b03a46276f7e3f3472204c11b2109e0e",
