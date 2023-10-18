@@ -1,0 +1,24 @@
+{
+  "tasks": {
+    "fmt": "deno fmt",
+    "lint": "deno lint",
+    "cache": "deno cache ./**/*.ts --lock",
+    "lock": "deno task cache --lock-write",
+    "test": "deno test --parallel",
+    "dev": "deno task fmt && deno task lint && deno task lock && deno task test",
+    "run": "deno run --allow-env --allow-read --allow-write=. --allow-run=deno,git --allow-net=deno.land,registry.npmjs.org",
+    "update": "deno task -q run https://deno.land/x/molt@0.5.0/cli.ts check ./**/*.ts"
+  },
+  "fmt": {
+    "exclude": [
+      "CHANGELOG.md"
+    ]
+  },
+  "lint": {
+    "rules": {
+      "include": [
+        "no-sync-fn-in-async-fn"
+      ]
+    }
+  }
+}
