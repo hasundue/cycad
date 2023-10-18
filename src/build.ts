@@ -1,23 +1,8 @@
 import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
-import { Lang, LangOptions } from "./langs.generated.ts";
-
+import { LangOptions, Language } from "./langs.generated.ts";
 import { TREE_SITTER } from "./paths.ts";
-import { installTreeSitter } from "./install.ts";
 
-async function getTreeSitterExecutablePath() {
-  if ($.commandExistsSync("tree-sitter")) {
-    return "tree-sitter";
-  }
-  if ($.commandExistsSync(TREE_SITTER)) {
-    return TREE_SITTER;
-  }
-  await installTreeSitter();
-  return TREE_SITTER;
-}
-
-async function buildParser(lang: Lang) {
-  const TREE_SITTER = await getTreeSitterExecutablePath();
-
+async function buildParser(lang: Language) {
   // Get repository name for langauge from nixpkgs
   const grammer = LangOptions[lang]?.grammar ?? lang;
   const json = await fetch(
@@ -53,10 +38,9 @@ async function buildParser(lang: Lang) {
 
 if (import.meta.main) {
   try {
-    await Promise.all(
-      Deno.args.map((lang) => buildParser(lang as Lang)),
-    );
-    Deno.exit(0);
+    for (const lang of Deno.args) {
+      await buildParser(lang as Language);
+    }
   } catch (error) {
     console.error(error);
     Deno.exit(1);
