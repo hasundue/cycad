@@ -32,6 +32,7 @@ function createLanguageList(grammars: string[]) {
 
 interface LanguageSpecOverlay {
   grammar?: string;
+  language?: string;
   location?: string;
   generate?: boolean;
 }
@@ -45,6 +46,9 @@ const LanguageSpecOverlays: Record<string, LanguageSpecOverlay | undefined> = {
   "ocaml-interface": {
     grammar: "ocaml",
     location: "interface",
+  },
+  "org-nvim": {
+    language: "org",
   },
   typescript: {
     grammar: "typescript",
@@ -63,6 +67,7 @@ const LanguageSpecOverlays: Record<string, LanguageSpecOverlay | undefined> = {
   },
   "markdown-inline": {
     grammar: "markdown",
+    language: "markdown_inline",
     location: "tree-sitter-markdown-inline",
   },
   wing: {
@@ -79,7 +84,7 @@ const isGrammarJson = is.ObjectOf({
 });
 
 type GrammarJson = Required<PredicateType<typeof isGrammarJson>> & {
-  name: string;
+  grammar: string;
 };
 
 async function fetchGrammarJson(
@@ -98,7 +103,7 @@ async function fetchGrammarJson(
     isGrammarJson,
   );
   return {
-    name: parseGrammerName(grammar),
+    grammar: parseGrammerName(grammar),
     url: json.url,
     fetchLFS: json.fetchLFS ?? false,
     fetchSubmodules: json.fetchSubmodules ?? false,
@@ -121,7 +126,7 @@ async function fetchGrammarJsons(
   return jsons;
 }
 
-type LanguageSpec = GrammarJson & Omit<LanguageSpecOverlay, "name">;
+type LanguageSpec = GrammarJson & Required<Omit<LanguageSpecOverlay, "name">>;
 
 type LanguageSpecMap = Record<string, LanguageSpec>;
 
@@ -132,13 +137,14 @@ export async function createLanguageSpecMap(): Promise<LanguageSpecMap> {
 
   return Object.fromEntries(languages.map((language) => {
     const overlay = LanguageSpecOverlays[language];
-    const grammar = overlay?.grammar ?? language;
-    const json = jsons.find((j) => j.name === grammar) ??
+    const grammar = overlay?.grammar ?? overlay?.language ?? language;
+    const json = jsons.find((j) => j.grammar === grammar) ??
       throw_(new Error(`Could not find grammar for ${language}`));
     return [
       language,
       {
         ...json,
+        language: overlay?.language ?? language,
         location: overlay?.location ?? ".",
         generate: overlay?.generate ?? false,
       },

@@ -1,7 +1,8 @@
+import { resolve } from "https://deno.land/std@0.204.0/path/mod.ts";
 import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
 import { createGraph } from "https://deno.land/x/deno_graph@0.57.1/mod.ts";
 import { DenoDir } from "https://deno.land/x/deno_cache@0.6.0/deno_dir.ts";
-import { Language } from "./langs.generated.ts";
+import { Language, LanguageSpecMap } from "./langs.generated.ts";
 import { throw_ } from "./utils.ts";
 
 function notFound(dir: string): never {
@@ -43,8 +44,25 @@ async function getTreeSitterExecutablePath() {
 
 export const TREE_SITTER = await getTreeSitterExecutablePath();
 
+/** Parse the repository specifier (e.g. tree-sitter/tree-sitter-javascript) from a URL */
+function getRepositorySpec(lang: Language) {
+  const url = new URL(LanguageSpecMap[lang].url);
+  return url.pathname.slice(1);
+}
+
+/** Get a full path of the directory where the repository is cloned */
+export function getVendorDir(lang: Language) {
+  const repo = getRepositorySpec(lang);
+  return resolve(`./vendor/${repo}`);
+}
+
+export function getLanguageDir(lang: Language) {
+  const vendor = getVendorDir(lang);
+  const location = LanguageSpecMap[lang].location;
+  return (location === ".") ? vendor : `${vendor}/${location}`;
+}
+
 export function getLanguagePath(lang: Language) {
-  const grammer = LanguageOptions[lang]?.grammar ?? lang;
-  const location = LanguageOptions[lang]?.location;
-  const dir = location ? `vendor/${repo}/${location}` : `vendor/${repo}`;
+  const dir = getLanguageDir(lang);
+  return `${dir}/tree-sitter-${LanguageSpecMap[lang].language}.wasm`;
 }
