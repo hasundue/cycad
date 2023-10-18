@@ -1,5 +1,5 @@
 import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
-import { Lang } from "./langs.generated.ts";
+import { Lang, LangOptions } from "./langs.generated.ts";
 
 import { TREE_SITTER } from "./paths.ts";
 import { installTreeSitter } from "./install.ts";
@@ -19,8 +19,9 @@ async function buildParser(lang: Lang) {
   const TREE_SITTER = await getTreeSitterExecutablePath();
 
   // Get repository name for langauge from nixpkgs
+  const grammer = LangOptions[lang]?.grammar ?? lang;
   const json = await fetch(
-    `https://raw.githubusercontent.com/NixOS/nixpkgs/master/pkgs/development/tools/parsing/tree-sitter/grammars/tree-sitter-${lang}.json`,
+    `https://raw.githubusercontent.com/NixOS/nixpkgs/master/pkgs/development/tools/parsing/tree-sitter/grammars/tree-sitter-${grammer}.json`,
   ).then((res) => {
     if (!res.ok) {
       throw new Error(
@@ -43,13 +44,18 @@ async function buildParser(lang: Lang) {
   }
 
   // Build parser
-  $.cd(`vendor/${repo}`);
+  const location = LangOptions[lang]?.location;
+  const dir = location ? `vendor/${repo}/${location}` : `vendor/${repo}`;
+
+  $.cd(dir);
   await $`${TREE_SITTER} build-wasm`;
 }
 
 if (import.meta.main) {
   try {
-    await Promise.all(Deno.args.map(buildParser));
+    await Promise.all(
+      Deno.args.map((lang) => buildParser(lang as Lang)),
+    );
     Deno.exit(0);
   } catch (error) {
     console.error(error);

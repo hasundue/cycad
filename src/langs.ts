@@ -2,15 +2,15 @@ import { distinct } from "https://deno.land/std@0.204.0/collections/distinct.ts"
 import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
 
 // Hard-ported from https://github.com/NixOS/nixpkgs/blob/master/pkgs/development/tools/parsing/tree-sitter/default.nix
-export const LangOptions = {
-  ocaml: { repo: "ocaml", location: "ocaml" },
-  "ocaml-interface": { repo: "ocaml", location: "interface" },
-  typescript: { repo: "typescript", location: "typescript" },
-  tsx: { repo: "typescript", location: "tsx" },
+const LangOptions = {
+  ocaml: { grammar: "ocaml", location: "ocaml" },
+  "ocaml-interface": { grammar: "ocaml", location: "interface" },
+  typescript: { grammar: "typescript", location: "typescript" },
+  tsx: { grammar: "typescript", location: "tsx" },
   typst: { generate: true },
-  markdown: { repo: "markdown", location: "tree-sitter-markdown" },
+  markdown: { grammar: "markdown", location: "tree-sitter-markdown" },
   "markdown-inline": {
-    repo: "markdown",
+    grammar: "markdown",
     location: "tree-sitter-markdown-inline",
   },
   wing: { location: "libs/tree-sitter-wing", generate: true },
@@ -36,15 +36,15 @@ async function generateTypeDeclarationFile() {
 
 export type Lang = ${langs.map((lang) => `"${lang}"`).join(" | ")}
 
-export const LangOptions: Partial<Record<Lang, LangOption>> = ${
-    JSON.stringify(LangOptions)
-  }
-
 export interface LangOption {
-  repo?: string;
+  grammar?: string;
   location?: string;
   generate?: boolean;
-}`;
+}
+
+export const LangOptions: Partial<Record<Lang, LangOption>> = ${
+    JSON.stringify(LangOptions)
+  }`;
 
   await Deno.writeTextFile(
     new URL("./langs.generated.ts", import.meta.url),

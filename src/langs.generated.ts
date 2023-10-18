@@ -108,22 +108,22 @@ export type Lang =
   | "yang"
   | "zig";
 
+export interface LangOption {
+  grammar?: string;
+  location?: string;
+  generate?: boolean;
+}
+
 export const LangOptions: Partial<Record<Lang, LangOption>> = {
-  "ocaml": { "repo": "ocaml", "location": "ocaml" },
-  "ocaml-interface": { "repo": "ocaml", "location": "interface" },
-  "typescript": { "repo": "typescript", "location": "typescript" },
-  "tsx": { "repo": "typescript", "location": "tsx" },
+  "ocaml": { "grammar": "ocaml", "location": "ocaml" },
+  "ocaml-interface": { "grammar": "ocaml", "location": "interface" },
+  "typescript": { "grammar": "typescript", "location": "typescript" },
+  "tsx": { "grammar": "typescript", "location": "tsx" },
   "typst": { "generate": true },
-  "markdown": { "repo": "markdown", "location": "tree-sitter-markdown" },
+  "markdown": { "grammar": "markdown", "location": "tree-sitter-markdown" },
   "markdown-inline": {
-    "repo": "markdown",
+    "grammar": "markdown",
     "location": "tree-sitter-markdown-inline",
   },
   "wing": { "location": "libs/tree-sitter-wing", "generate": true },
 };
-
-export interface LangOption {
-  repo?: string;
-  location?: string;
-  generate?: boolean;
-}
