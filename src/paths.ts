@@ -5,31 +5,28 @@ import { Language, LanguageSpecMap } from "./langs.generated.ts";
 import { throw_ } from "./utils.ts";
 import { installTreeSitter } from "./install.ts";
 
-const DENO_CACHE = $.path(
+export const DENO_CACHE = $.path(
   new DenoDir().root ?? throw_(new Error("DENO_CACHE not found")),
+);
+
+export const TSC_MODULE = $.path(
+  new URL("../lib/npm/tree-sitter-cli.ts", import.meta.url),
 );
 
 export async function getTreeSitterCacheDir(): Promise<PathRef> {
   // Parse the import statement of npm:tree-sitter-cli in deps.ts
-  const deps = new URL("../lib/npm/tree-sitter-cli.ts", import.meta.url).href;
-  const graph = await createGraph(deps);
+  const graph = await createGraph(TSC_MODULE.toFileUrl().href);
   const json =
     graph.modules.flatMap((m) => m.dependencies ?? []).find((d) =>
       d.specifier.startsWith("npm:tree-sitter-cli")
     ) ??
       throw_(
         new Error(
-          "Could not find an import statement for tree-sitter-cli in ./lib/npm/tree-sitter-cli.ts",
+          "Could not find an import statement for tree-sitter-cli in lib/npm/tree-sitter-cli.ts",
         ),
       );
-
-  // Cache npm:tree-sitter-cli
-  await $`deno cache ${deps}`;
-
   const version = json.specifier.split("@")[1];
-  return $.path(
-    `${DENO_CACHE}/npm/registry.npmjs.org/tree-sitter-cli/${version}`,
-  );
+  return DENO_CACHE.join(`/npm/registry.npmjs.org/tree-sitter-cli/${version}`);
 }
 
 export async function getTreeSitterExecutablePath(): Promise<PathRef> {

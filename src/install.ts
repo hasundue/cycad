@@ -1,13 +1,10 @@
 import { $ } from "../lib/x/dax.ts";
-import { getTreeSitterCacheDir } from "./paths.ts";
+import { getTreeSitterCacheDir, TSC_MODULE } from "./paths.ts";
 
 export async function installTreeSitter() {
   // Cache tree-sitter-cli
-  const url = new URL("./deps.ts", import.meta.url);
-  const path = $.path(url).resolve();
-
   await $.progress(`Caching npm:tree-sitter-cli`)
-    .with(async () => await $`deno cache ${path}`.quiet());
+    .with(async () => await $`deno cache ${TSC_MODULE}`.quiet());
 
   // Install tree-sitter executable
   const dir = await getTreeSitterCacheDir();
