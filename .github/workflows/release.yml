@@ -16,5 +16,7 @@ jobs:
         with:
           package-name: ${{ github.repository }}
           release-type: simple
-          bump-minor-pre-major: true
+          versioning-strategy: always-bump-patch # use this until v0.1.0
+          # bump-minor-pre-major: true
+          # bump-patch-for-minor-pre-major: true
           include-v-in-tag: false
