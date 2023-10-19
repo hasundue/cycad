@@ -6,7 +6,7 @@
     "cache": "deno cache ./**/*.ts --lock",
     "lock": "deno task cache --lock-write",
     "build": "deno task -q run src/generate.ts",
-    "test": "deno test --allow-env --allow-read --allow-write --allow-run --allow-net --parallel",
+    "test": "deno test --allow-env --allow-read --allow-write --allow-run --allow-net",
     "test:update": "deno task -q test -- --update",
     "dev": "deno task fmt && deno task lint && deno task lock && deno task test",
     "update": "deno task -q run https://deno.land/x/molt@0.5.0/cli.ts check ./**/*.ts"
