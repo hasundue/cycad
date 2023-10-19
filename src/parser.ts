@@ -3,17 +3,14 @@ import { Language } from "./langs.generated.ts";
 import { getLanguageWasmPath } from "./paths.ts";
 import { buildParser } from "./build.ts";
 
+// We have to redeclare the parse() method because Deno doesn't generate
+// the correct type definition from npm:web-tree-sitter.
 export interface Parser extends TreeSitter {
   parse(
     input: string | TreeSitter.Input,
     previousTree?: TreeSitter.Tree,
     options?: TreeSitter.Options,
   ): TreeSitter.Tree;
-  reset(): void;
-  getLogger(): TreeSitter.Logger;
-  setLogger(logFunc?: TreeSitter.Logger | undefined | null): void;
-  setTimeoutMicros(value: number): void;
-  getTimeoutMicros(): number;
 }
 
 export const Parser = {
