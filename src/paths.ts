@@ -28,12 +28,13 @@ export async function getTreeSitterCacheDir(): Promise<PathRef> {
 }
 
 export async function getTreeSitterExecutablePath(): Promise<PathRef> {
-  const exe = await $.which("tree-sitter");
-  if (exe) {
-    return $.path(exe);
+  const cmd = Deno.build.os === "windows" ? "tree-sitter.exe" : "tree-sitter";
+  const found = await $.which(cmd);
+  if (found) {
+    return $.path(found);
   }
   const dir = await getTreeSitterCacheDir();
-  const bin = dir.join("tree-sitter");
+  const bin = dir.join(cmd);
   if (await bin.exists() === false) {
     await installTreeSitter();
   }
