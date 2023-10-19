@@ -1,7 +1,10 @@
-import { Parser } from "./parser.ts";
+import {
+  assertSnapshot,
+} from "https://deno.land/std@0.204.0/testing/snapshot.ts";
+import { parser } from "./parser.ts#markdown";
 
-const parser = await Parser.init("markdown");
-
-const src = Deno.readTextFileSync("README.md");
-const tree = parser.parse(src);
-console.log(tree.rootNode.toString());
+Deno.test("parser", async (t) => {
+  const src = await Deno.readTextFile("README.md");
+  const tree = parser.parse(src);
+  await assertSnapshot(t, tree.rootNode.toString());
+});

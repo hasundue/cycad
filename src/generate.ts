@@ -161,6 +161,11 @@ export const LanguageSpecMap = ${
   } as const;
 
 export type Language = keyof typeof LanguageSpecMap;
+
+
+export const isLanguage = (lang: string): lang is Language => {
+  return lang in LanguageSpecMap;
+};
 `;
   await Deno.writeTextFile(
     new URL("./langs.generated.ts", import.meta.url),

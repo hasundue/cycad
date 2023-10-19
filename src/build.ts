@@ -1,8 +1,12 @@
 import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
 import { Language, LanguageSpecMap } from "./langs.generated.ts";
-import { getLanguageDir, getVendorDir, TREE_SITTER } from "./paths.ts";
+import {
+  getLanguageDir,
+  getTreeSitterExecutablePath,
+  getVendorDir,
+} from "./paths.ts";
 
-async function buildParser(lang: Language) {
+export async function buildParser(lang: Language) {
   const spec = LanguageSpecMap[lang];
   const cache = getVendorDir(lang);
   try {
@@ -18,8 +22,9 @@ async function buildParser(lang: Language) {
       );
   }
   $.cd(getLanguageDir(lang));
+  const bin = await getTreeSitterExecutablePath();
   await $.progress(`Building ${lang} parser`)
-    .with(async () => await $`${TREE_SITTER} build-wasm`);
+    .with(async () => await $`${bin} build-wasm`);
 }
 
 if (import.meta.main) {

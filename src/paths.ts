@@ -4,6 +4,7 @@ import { createGraph } from "https://deno.land/x/deno_graph@0.57.1/mod.ts";
 import { DenoDir } from "https://deno.land/x/deno_cache@0.6.0/deno_dir.ts";
 import { Language, LanguageSpecMap } from "./langs.generated.ts";
 import { throw_ } from "./utils.ts";
+import { installTreeSitter } from "./install.ts";
 
 function notFound(dir: string): never {
   throw new Error(`${dir} directory not found`);
@@ -11,7 +12,7 @@ function notFound(dir: string): never {
 
 export const DENO_CACHE = new DenoDir().root ?? notFound("Cache");
 
-async function getTreeSitterCacheDir() {
+export async function getTreeSitterCacheDir() {
   // Parse the import statement of npm:tree-sitter-cli in deps.ts
   const graph = await createGraph(new URL("./deps.ts", import.meta.url).href);
   const json =
@@ -27,9 +28,7 @@ async function getTreeSitterCacheDir() {
   return `${DENO_CACHE}/npm/registry.npmjs.org/tree-sitter-cli/${version}`;
 }
 
-export const TREE_SITTER_CACHE = await getTreeSitterCacheDir();
-
-async function getTreeSitterExecutablePath() {
+export async function getTreeSitterExecutablePath() {
   if (await $.commandExists("tree-sitter")) {
     return "tree-sitter";
   }
@@ -37,12 +36,9 @@ async function getTreeSitterExecutablePath() {
   if (await $.commandExists(cmd)) {
     return cmd;
   }
-  throw new Error(
-    "tree-sitter executable not found. Install tree-sitter CLI from the system package manager, or via 'deno run https://deno.land/x/cycad_sitter/install.ts'",
-  );
+  await installTreeSitter();
+  return cmd;
 }
-
-export const TREE_SITTER = await getTreeSitterExecutablePath();
 
 /** Parse the repository specifier (e.g. tree-sitter/tree-sitter-javascript) from a URL */
 function getRepositorySpec(lang: Language) {
