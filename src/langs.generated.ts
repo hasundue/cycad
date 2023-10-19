@@ -4,9 +4,6 @@ export const LanguageSpecMap = {
   "bash": {
     "grammar": "bash",
     "url": "https://github.com/tree-sitter/tree-sitter-bash",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "bash",
     "location": ".",
     "generate": false,
@@ -14,9 +11,6 @@ export const LanguageSpecMap = {
   "beancount": {
     "grammar": "beancount",
     "url": "https://github.com/polarmutex/tree-sitter-beancount",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "beancount",
     "location": ".",
     "generate": false,
@@ -24,9 +18,6 @@ export const LanguageSpecMap = {
   "bibtex": {
     "grammar": "bibtex",
     "url": "https://github.com/latex-lsp/tree-sitter-bibtex",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "bibtex",
     "location": ".",
     "generate": false,
@@ -34,9 +25,6 @@ export const LanguageSpecMap = {
   "c": {
     "grammar": "c",
     "url": "https://github.com/tree-sitter/tree-sitter-c-sharp",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "c",
     "location": ".",
     "generate": false,
@@ -44,9 +32,6 @@ export const LanguageSpecMap = {
   "clojure": {
     "grammar": "clojure",
     "url": "https://github.com/sogaiu/tree-sitter-clojure",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "clojure",
     "location": ".",
     "generate": false,
@@ -54,9 +39,6 @@ export const LanguageSpecMap = {
   "cmake": {
     "grammar": "cmake",
     "url": "https://github.com/uyha/tree-sitter-cmake",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "cmake",
     "location": ".",
     "generate": false,
@@ -64,9 +46,6 @@ export const LanguageSpecMap = {
   "comment": {
     "grammar": "comment",
     "url": "https://github.com/stsewd/tree-sitter-comment",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "comment",
     "location": ".",
     "generate": false,
@@ -74,9 +53,6 @@ export const LanguageSpecMap = {
   "commonlisp": {
     "grammar": "commonlisp",
     "url": "https://github.com/thehamsta/tree-sitter-commonlisp",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "commonlisp",
     "location": ".",
     "generate": false,
@@ -84,9 +60,6 @@ export const LanguageSpecMap = {
   "cpp": {
     "grammar": "cpp",
     "url": "https://github.com/tree-sitter/tree-sitter-cpp",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "cpp",
     "location": ".",
     "generate": false,
@@ -94,9 +67,6 @@ export const LanguageSpecMap = {
   "css": {
     "grammar": "css",
     "url": "https://github.com/tree-sitter/tree-sitter-css",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "css",
     "location": ".",
     "generate": false,
@@ -104,9 +74,6 @@ export const LanguageSpecMap = {
   "cuda": {
     "grammar": "cuda",
     "url": "https://github.com/thehamsta/tree-sitter-cuda",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "cuda",
     "location": ".",
     "generate": false,
@@ -114,9 +81,6 @@ export const LanguageSpecMap = {
   "cue": {
     "grammar": "cue",
     "url": "https://github.com/eonpatapon/tree-sitter-cue",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "cue",
     "location": ".",
     "generate": false,
@@ -124,9 +88,6 @@ export const LanguageSpecMap = {
   "dart": {
     "grammar": "dart",
     "url": "https://github.com/usernobody14/tree-sitter-dart",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "dart",
     "location": ".",
     "generate": false,
@@ -134,9 +95,6 @@ export const LanguageSpecMap = {
   "devicetree": {
     "grammar": "devicetree",
     "url": "https://github.com/joelspadin/tree-sitter-devicetree",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "devicetree",
     "location": ".",
     "generate": false,
@@ -144,9 +102,6 @@ export const LanguageSpecMap = {
   "dockerfile": {
     "grammar": "dockerfile",
     "url": "https://github.com/camdencheek/tree-sitter-dockerfile",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "dockerfile",
     "location": ".",
     "generate": false,
@@ -154,9 +109,6 @@ export const LanguageSpecMap = {
   "dot": {
     "grammar": "dot",
     "url": "https://github.com/rydesun/tree-sitter-dot",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "dot",
     "location": ".",
     "generate": false,
@@ -164,9 +116,6 @@ export const LanguageSpecMap = {
   "eex": {
     "grammar": "eex",
     "url": "https://github.com/connorlay/tree-sitter-eex",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "eex",
     "location": ".",
     "generate": false,
@@ -174,9 +123,6 @@ export const LanguageSpecMap = {
   "elisp": {
     "grammar": "elisp",
     "url": "https://github.com/wilfred/tree-sitter-elisp",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "elisp",
     "location": ".",
     "generate": false,
@@ -184,9 +130,6 @@ export const LanguageSpecMap = {
   "elixir": {
     "grammar": "elixir",
     "url": "https://github.com/elixir-lang/tree-sitter-elixir",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "elixir",
     "location": ".",
     "generate": false,
@@ -194,9 +137,6 @@ export const LanguageSpecMap = {
   "elm": {
     "grammar": "elm",
     "url": "https://github.com/elm-tooling/tree-sitter-elm",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "elm",
     "location": ".",
     "generate": false,
@@ -204,9 +144,6 @@ export const LanguageSpecMap = {
   "embedded": {
     "grammar": "embedded",
     "url": "https://github.com/tree-sitter/tree-sitter-embedded-template",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "embedded",
     "location": ".",
     "generate": false,
@@ -214,9 +151,6 @@ export const LanguageSpecMap = {
   "erlang": {
     "grammar": "erlang",
     "url": "https://github.com/abstractmachineslab/tree-sitter-erlang",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "erlang",
     "location": ".",
     "generate": false,
@@ -224,9 +158,6 @@ export const LanguageSpecMap = {
   "fennel": {
     "grammar": "fennel",
     "url": "https://github.com/travonted/tree-sitter-fennel",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "fennel",
     "location": ".",
     "generate": false,
@@ -234,9 +165,6 @@ export const LanguageSpecMap = {
   "fish": {
     "grammar": "fish",
     "url": "https://github.com/ram02z/tree-sitter-fish",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "fish",
     "location": ".",
     "generate": false,
@@ -244,9 +172,6 @@ export const LanguageSpecMap = {
   "fortran": {
     "grammar": "fortran",
     "url": "https://github.com/stadelmanma/tree-sitter-fortran",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "fortran",
     "location": ".",
     "generate": false,
@@ -254,9 +179,6 @@ export const LanguageSpecMap = {
   "gdscript": {
     "grammar": "gdscript",
     "url": "https://github.com/prestonknopp/tree-sitter-gdscript",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "gdscript",
     "location": ".",
     "generate": false,
@@ -264,9 +186,6 @@ export const LanguageSpecMap = {
   "glimmer": {
     "grammar": "glimmer",
     "url": "https://github.com/alexlafroscia/tree-sitter-glimmer",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "glimmer",
     "location": ".",
     "generate": false,
@@ -274,9 +193,6 @@ export const LanguageSpecMap = {
   "glsl": {
     "grammar": "glsl",
     "url": "https://github.com/thehamsta/tree-sitter-glsl",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "glsl",
     "location": ".",
     "generate": false,
@@ -284,9 +200,6 @@ export const LanguageSpecMap = {
   "go": {
     "grammar": "go",
     "url": "https://github.com/tree-sitter/tree-sitter-go",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "go",
     "location": ".",
     "generate": false,
@@ -294,9 +207,6 @@ export const LanguageSpecMap = {
   "godot": {
     "grammar": "godot",
     "url": "https://github.com/prestonknopp/tree-sitter-godot-resource",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "godot",
     "location": ".",
     "generate": false,
@@ -304,9 +214,6 @@ export const LanguageSpecMap = {
   "gomod": {
     "grammar": "gomod",
     "url": "https://github.com/camdencheek/tree-sitter-go-mod",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "gomod",
     "location": ".",
     "generate": false,
@@ -314,9 +221,6 @@ export const LanguageSpecMap = {
   "gowork": {
     "grammar": "gowork",
     "url": "https://github.com/omertuc/tree-sitter-go-work",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "gowork",
     "location": ".",
     "generate": false,
@@ -324,9 +228,6 @@ export const LanguageSpecMap = {
   "graphql": {
     "grammar": "graphql",
     "url": "https://github.com/bkegley/tree-sitter-graphql",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "graphql",
     "location": ".",
     "generate": false,
@@ -334,9 +235,6 @@ export const LanguageSpecMap = {
   "haskell": {
     "grammar": "haskell",
     "url": "https://github.com/tree-sitter/tree-sitter-haskell",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "haskell",
     "location": ".",
     "generate": false,
@@ -344,9 +242,6 @@ export const LanguageSpecMap = {
   "hcl": {
     "grammar": "hcl",
     "url": "https://github.com/MichaHoffmann/tree-sitter-hcl",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "hcl",
     "location": ".",
     "generate": false,
@@ -354,9 +249,6 @@ export const LanguageSpecMap = {
   "heex": {
     "grammar": "heex",
     "url": "https://github.com/connorlay/tree-sitter-heex",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "heex",
     "location": ".",
     "generate": false,
@@ -364,9 +256,6 @@ export const LanguageSpecMap = {
   "hjson": {
     "grammar": "hjson",
     "url": "https://github.com/winston0410/tree-sitter-hjson",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "hjson",
     "location": ".",
     "generate": false,
@@ -374,9 +263,6 @@ export const LanguageSpecMap = {
   "html": {
     "grammar": "html",
     "url": "https://github.com/tree-sitter/tree-sitter-html",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "html",
     "location": ".",
     "generate": false,
@@ -384,9 +270,6 @@ export const LanguageSpecMap = {
   "http": {
     "grammar": "http",
     "url": "https://github.com/ntbbloodbath/tree-sitter-http",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "http",
     "location": ".",
     "generate": false,
@@ -394,9 +277,6 @@ export const LanguageSpecMap = {
   "janet": {
     "grammar": "janet",
     "url": "https://github.com/sogaiu/tree-sitter-janet-simple",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "janet",
     "location": ".",
     "generate": false,
@@ -404,9 +284,6 @@ export const LanguageSpecMap = {
   "java": {
     "grammar": "java",
     "url": "https://github.com/tree-sitter/tree-sitter-java",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "java",
     "location": ".",
     "generate": false,
@@ -414,9 +291,6 @@ export const LanguageSpecMap = {
   "javascript": {
     "grammar": "javascript",
     "url": "https://github.com/tree-sitter/tree-sitter-javascript",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "javascript",
     "location": ".",
     "generate": false,
@@ -424,9 +298,6 @@ export const LanguageSpecMap = {
   "jsdoc": {
     "grammar": "jsdoc",
     "url": "https://github.com/tree-sitter/tree-sitter-jsdoc",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "jsdoc",
     "location": ".",
     "generate": false,
@@ -434,9 +305,6 @@ export const LanguageSpecMap = {
   "json": {
     "grammar": "json",
     "url": "https://github.com/tree-sitter/tree-sitter-json",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "json",
     "location": ".",
     "generate": false,
@@ -444,9 +312,6 @@ export const LanguageSpecMap = {
   "json5": {
     "grammar": "json5",
     "url": "https://github.com/joakker/tree-sitter-json5",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "json5",
     "location": ".",
     "generate": false,
@@ -454,9 +319,6 @@ export const LanguageSpecMap = {
   "jsonnet": {
     "grammar": "jsonnet",
     "url": "https://github.com/sourcegraph/tree-sitter-jsonnet",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "jsonnet",
     "location": ".",
     "generate": false,
@@ -464,9 +326,6 @@ export const LanguageSpecMap = {
   "julia": {
     "grammar": "julia",
     "url": "https://github.com/tree-sitter/tree-sitter-julia",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "julia",
     "location": ".",
     "generate": false,
@@ -474,9 +333,6 @@ export const LanguageSpecMap = {
   "kotlin": {
     "grammar": "kotlin",
     "url": "https://github.com/fwcd/tree-sitter-kotlin",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "kotlin",
     "location": ".",
     "generate": false,
@@ -484,9 +340,6 @@ export const LanguageSpecMap = {
   "latex": {
     "grammar": "latex",
     "url": "https://github.com/latex-lsp/tree-sitter-latex",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "latex",
     "location": ".",
     "generate": false,
@@ -494,9 +347,6 @@ export const LanguageSpecMap = {
   "ledger": {
     "grammar": "ledger",
     "url": "https://github.com/cbarrete/tree-sitter-ledger",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "ledger",
     "location": ".",
     "generate": false,
@@ -504,9 +354,6 @@ export const LanguageSpecMap = {
   "llvm": {
     "grammar": "llvm",
     "url": "https://github.com/benwilliamgraham/tree-sitter-llvm",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "llvm",
     "location": ".",
     "generate": false,
@@ -514,9 +361,6 @@ export const LanguageSpecMap = {
   "lua": {
     "grammar": "lua",
     "url": "https://github.com/MunifTanjim/tree-sitter-lua",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "lua",
     "location": ".",
     "generate": false,
@@ -524,9 +368,6 @@ export const LanguageSpecMap = {
   "make": {
     "grammar": "make",
     "url": "https://github.com/alemuller/tree-sitter-make",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "make",
     "location": ".",
     "generate": false,
@@ -534,9 +375,6 @@ export const LanguageSpecMap = {
   "markdown": {
     "grammar": "markdown",
     "url": "https://github.com/MDeiml/tree-sitter-markdown",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "markdown",
     "location": "tree-sitter-markdown",
     "generate": false,
@@ -544,9 +382,6 @@ export const LanguageSpecMap = {
   "markdown-inline": {
     "grammar": "markdown",
     "url": "https://github.com/MDeiml/tree-sitter-markdown",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "markdown_inline",
     "location": "tree-sitter-markdown-inline",
     "generate": false,
@@ -554,9 +389,6 @@ export const LanguageSpecMap = {
   "nickel": {
     "grammar": "nickel",
     "url": "https://github.com/nickel-lang/tree-sitter-nickel",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "nickel",
     "location": ".",
     "generate": false,
@@ -564,9 +396,6 @@ export const LanguageSpecMap = {
   "nix": {
     "grammar": "nix",
     "url": "https://github.com/cstrahan/tree-sitter-nix",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "nix",
     "location": ".",
     "generate": false,
@@ -574,9 +403,6 @@ export const LanguageSpecMap = {
   "norg": {
     "grammar": "norg",
     "url": "https://github.com/nvim-neorg/tree-sitter-norg",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "norg",
     "location": ".",
     "generate": false,
@@ -584,9 +410,6 @@ export const LanguageSpecMap = {
   "nu": {
     "grammar": "nu",
     "url": "https://github.com/LhKipp/tree-sitter-nu",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "nu",
     "location": ".",
     "generate": false,
@@ -594,9 +417,6 @@ export const LanguageSpecMap = {
   "ocaml": {
     "grammar": "ocaml",
     "url": "https://github.com/tree-sitter/tree-sitter-ocaml",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "ocaml",
     "location": "ocaml",
     "generate": false,
@@ -604,9 +424,6 @@ export const LanguageSpecMap = {
   "ocaml-interface": {
     "grammar": "ocaml",
     "url": "https://github.com/tree-sitter/tree-sitter-ocaml",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "ocaml-interface",
     "location": "interface",
     "generate": false,
@@ -614,9 +431,6 @@ export const LanguageSpecMap = {
   "org": {
     "grammar": "org",
     "url": "https://github.com/milisims/tree-sitter-org",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "org",
     "location": ".",
     "generate": false,
@@ -624,9 +438,6 @@ export const LanguageSpecMap = {
   "org-nvim": {
     "grammar": "org",
     "url": "https://github.com/milisims/tree-sitter-org",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "org",
     "location": ".",
     "generate": false,
@@ -634,9 +445,6 @@ export const LanguageSpecMap = {
   "perl": {
     "grammar": "perl",
     "url": "https://github.com/ganezdragon/tree-sitter-perl",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "perl",
     "location": ".",
     "generate": false,
@@ -644,9 +452,6 @@ export const LanguageSpecMap = {
   "pgn": {
     "grammar": "pgn",
     "url": "https://github.com/rolandwalker/tree-sitter-pgn",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "pgn",
     "location": ".",
     "generate": false,
@@ -654,9 +459,6 @@ export const LanguageSpecMap = {
   "php": {
     "grammar": "php",
     "url": "https://github.com/tree-sitter/tree-sitter-php",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "php",
     "location": ".",
     "generate": false,
@@ -664,9 +466,6 @@ export const LanguageSpecMap = {
   "pioasm": {
     "grammar": "pioasm",
     "url": "https://github.com/leo60228/tree-sitter-pioasm",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "pioasm",
     "location": ".",
     "generate": false,
@@ -674,9 +473,6 @@ export const LanguageSpecMap = {
   "prisma": {
     "grammar": "prisma",
     "url": "https://github.com/victorhqc/tree-sitter-prisma",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "prisma",
     "location": ".",
     "generate": false,
@@ -684,9 +480,6 @@ export const LanguageSpecMap = {
   "proto": {
     "grammar": "proto",
     "url": "https://github.com/mitchellh/tree-sitter-proto",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "proto",
     "location": ".",
     "generate": false,
@@ -694,9 +487,6 @@ export const LanguageSpecMap = {
   "pug": {
     "grammar": "pug",
     "url": "https://github.com/zealot128/tree-sitter-pug",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "pug",
     "location": ".",
     "generate": false,
@@ -704,9 +494,6 @@ export const LanguageSpecMap = {
   "python": {
     "grammar": "python",
     "url": "https://github.com/tree-sitter/tree-sitter-python",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "python",
     "location": ".",
     "generate": false,
@@ -714,9 +501,6 @@ export const LanguageSpecMap = {
   "ql": {
     "grammar": "ql",
     "url": "https://github.com/tree-sitter/tree-sitter-ql-dbscheme",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "ql",
     "location": ".",
     "generate": false,
@@ -724,9 +508,6 @@ export const LanguageSpecMap = {
   "query": {
     "grammar": "query",
     "url": "https://github.com/nvim-treesitter/tree-sitter-query",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "query",
     "location": ".",
     "generate": false,
@@ -734,9 +515,6 @@ export const LanguageSpecMap = {
   "r": {
     "grammar": "r",
     "url": "https://github.com/r-lib/tree-sitter-r",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "r",
     "location": ".",
     "generate": false,
@@ -744,9 +522,6 @@ export const LanguageSpecMap = {
   "razor": {
     "grammar": "razor",
     "url": "https://github.com/tree-sitter/tree-sitter-razor",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "razor",
     "location": ".",
     "generate": false,
@@ -754,9 +529,6 @@ export const LanguageSpecMap = {
   "regex": {
     "grammar": "regex",
     "url": "https://github.com/tree-sitter/tree-sitter-regex",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "regex",
     "location": ".",
     "generate": false,
@@ -764,9 +536,6 @@ export const LanguageSpecMap = {
   "rego": {
     "grammar": "rego",
     "url": "https://github.com/FallenAngel97/tree-sitter-rego",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "rego",
     "location": ".",
     "generate": false,
@@ -774,9 +543,6 @@ export const LanguageSpecMap = {
   "rst": {
     "grammar": "rst",
     "url": "https://github.com/stsewd/tree-sitter-rst",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "rst",
     "location": ".",
     "generate": false,
@@ -784,9 +550,6 @@ export const LanguageSpecMap = {
   "ruby": {
     "grammar": "ruby",
     "url": "https://github.com/tree-sitter/tree-sitter-ruby",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "ruby",
     "location": ".",
     "generate": false,
@@ -794,9 +557,6 @@ export const LanguageSpecMap = {
   "rust": {
     "grammar": "rust",
     "url": "https://github.com/tree-sitter/tree-sitter-rust",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "rust",
     "location": ".",
     "generate": false,
@@ -804,9 +564,6 @@ export const LanguageSpecMap = {
   "scala": {
     "grammar": "scala",
     "url": "https://github.com/tree-sitter/tree-sitter-scala",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "scala",
     "location": ".",
     "generate": false,
@@ -814,9 +571,6 @@ export const LanguageSpecMap = {
   "scheme": {
     "grammar": "scheme",
     "url": "https://github.com/6cdh/tree-sitter-scheme",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "scheme",
     "location": ".",
     "generate": false,
@@ -824,9 +578,6 @@ export const LanguageSpecMap = {
   "scss": {
     "grammar": "scss",
     "url": "https://github.com/serenadeai/tree-sitter-scss",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "scss",
     "location": ".",
     "generate": false,
@@ -834,9 +585,6 @@ export const LanguageSpecMap = {
   "smithy": {
     "grammar": "smithy",
     "url": "https://github.com/indoorvivants/tree-sitter-smithy",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "smithy",
     "location": ".",
     "generate": false,
@@ -844,9 +592,6 @@ export const LanguageSpecMap = {
   "solidity": {
     "grammar": "solidity",
     "url": "https://github.com/JoranHonig/tree-sitter-solidity",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "solidity",
     "location": ".",
     "generate": false,
@@ -854,9 +599,6 @@ export const LanguageSpecMap = {
   "sparql": {
     "grammar": "sparql",
     "url": "https://github.com/bonabeavis/tree-sitter-sparql",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "sparql",
     "location": ".",
     "generate": false,
@@ -864,9 +606,6 @@ export const LanguageSpecMap = {
   "sql": {
     "grammar": "sql",
     "url": "https://github.com/derekstride/tree-sitter-sql",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "sql",
     "location": ".",
     "generate": false,
@@ -874,9 +613,6 @@ export const LanguageSpecMap = {
   "supercollider": {
     "grammar": "supercollider",
     "url": "https://github.com/madskjeldgaard/tree-sitter-supercollider",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "supercollider",
     "location": ".",
     "generate": false,
@@ -884,9 +620,6 @@ export const LanguageSpecMap = {
   "surface": {
     "grammar": "surface",
     "url": "https://github.com/connorlay/tree-sitter-surface",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "surface",
     "location": ".",
     "generate": false,
@@ -894,9 +627,6 @@ export const LanguageSpecMap = {
   "svelte": {
     "grammar": "svelte",
     "url": "https://github.com/Himujjal/tree-sitter-svelte",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "svelte",
     "location": ".",
     "generate": false,
@@ -904,9 +634,6 @@ export const LanguageSpecMap = {
   "tiger": {
     "grammar": "tiger",
     "url": "https://github.com/ambroisie/tree-sitter-tiger",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "tiger",
     "location": ".",
     "generate": false,
@@ -914,9 +641,6 @@ export const LanguageSpecMap = {
   "tlaplus": {
     "grammar": "tlaplus",
     "url": "https://github.com/tlaplus-community/tree-sitter-tlaplus",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "tlaplus",
     "location": ".",
     "generate": false,
@@ -924,9 +648,6 @@ export const LanguageSpecMap = {
   "toml": {
     "grammar": "toml",
     "url": "https://github.com/tree-sitter/tree-sitter-toml",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "toml",
     "location": ".",
     "generate": false,
@@ -934,9 +655,6 @@ export const LanguageSpecMap = {
   "tsq": {
     "grammar": "tsq",
     "url": "https://github.com/tree-sitter/tree-sitter-tsq",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "tsq",
     "location": ".",
     "generate": false,
@@ -944,9 +662,6 @@ export const LanguageSpecMap = {
   "tsx": {
     "grammar": "typescript",
     "url": "https://github.com/tree-sitter/tree-sitter-typescript",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "tsx",
     "location": "tsx",
     "generate": false,
@@ -954,9 +669,6 @@ export const LanguageSpecMap = {
   "turtle": {
     "grammar": "turtle",
     "url": "https://github.com/bonabeavis/tree-sitter-turtle",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "turtle",
     "location": ".",
     "generate": false,
@@ -964,9 +676,6 @@ export const LanguageSpecMap = {
   "typescript": {
     "grammar": "typescript",
     "url": "https://github.com/tree-sitter/tree-sitter-typescript",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "typescript",
     "location": "typescript",
     "generate": false,
@@ -974,9 +683,6 @@ export const LanguageSpecMap = {
   "typst": {
     "grammar": "typst",
     "url": "https://github.com/uben0/tree-sitter-typst",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "typst",
     "location": ".",
     "generate": true,
@@ -984,9 +690,6 @@ export const LanguageSpecMap = {
   "verilog": {
     "grammar": "verilog",
     "url": "https://github.com/tree-sitter/tree-sitter-verilog",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "verilog",
     "location": ".",
     "generate": false,
@@ -994,9 +697,6 @@ export const LanguageSpecMap = {
   "vim": {
     "grammar": "vim",
     "url": "https://github.com/vigoux/tree-sitter-viml",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "vim",
     "location": ".",
     "generate": false,
@@ -1004,9 +704,6 @@ export const LanguageSpecMap = {
   "vue": {
     "grammar": "vue",
     "url": "https://github.com/ikatyang/tree-sitter-vue",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "vue",
     "location": ".",
     "generate": false,
@@ -1014,9 +711,6 @@ export const LanguageSpecMap = {
   "wing": {
     "grammar": "wing",
     "url": "https://github.com/winglang/wing",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "wing",
     "location": "libs/tree-sitter-wing",
     "generate": true,
@@ -1024,9 +718,6 @@ export const LanguageSpecMap = {
   "yaml": {
     "grammar": "yaml",
     "url": "https://github.com/ikatyang/tree-sitter-yaml",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "yaml",
     "location": ".",
     "generate": false,
@@ -1034,9 +725,6 @@ export const LanguageSpecMap = {
   "yang": {
     "grammar": "yang",
     "url": "https://github.com/hubro/tree-sitter-yang",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "yang",
     "location": ".",
     "generate": false,
@@ -1044,9 +732,6 @@ export const LanguageSpecMap = {
   "zig": {
     "grammar": "zig",
     "url": "https://github.com/maxxnino/tree-sitter-zig",
-    "fetchLFS": false,
-    "fetchSubmodules": false,
-    "deepClone": false,
     "language": "zig",
     "location": ".",
     "generate": false,

@@ -110,7 +110,7 @@ async function fetchGrammarJsons(
 ): Promise<GrammarJson[]> {
   const jsons: GrammarJson[] = [];
   const progbar = $.progress(
-    `Fetching metadata for grammars fron nixpkgs repository`,
+    `Fetching metadata for grammars from nixpkgs repository`,
     { length: grammars.length },
   );
   await progbar.with(async () => {
@@ -164,12 +164,13 @@ export const isLanguage = (lang: string): lang is Language => {
   return lang in LanguageSpecMap;
 };
 `;
-  const dest = new URL("./langs.generated.ts", import.meta.url);
+  const url = new URL("./langs.generated.ts", import.meta.url);
   await Deno.writeTextFile(
-    dest,
+    url,
     content,
   );
-  await $`deno fmt ${dest}`.stderr("null");
+  const path = $.path(url);
+  await $`deno fmt ${path}`.quiet();
 }
 
 if (import.meta.main) {
