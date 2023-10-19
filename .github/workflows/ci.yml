@@ -63,7 +63,7 @@ jobs:
         uses: mymindstorm/setup-emsdk@v11
         with:
           version: 3.1.47
-          actions-cache-folder: 'emsdk-cache'
+          actions-cache-folder: 'emsdk-cache-${{ matrix.os }}'
 
       - name: Cache
         run: deno task cache
