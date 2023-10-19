@@ -1,5 +1,5 @@
-import { resolve } from "https://deno.land/std@0.204.0/path/mod.ts";
-import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
+import { resolve } from "../lib/std/path.ts";
+import { $ } from "../lib/x/dax.ts";
 import { Language, LanguageSpecMap } from "./langs.generated.ts";
 import {
   getLanguageDir,

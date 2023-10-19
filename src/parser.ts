@@ -1,4 +1,4 @@
-import TreeSitter from "npm:web-tree-sitter@0.20.8";
+import { TreeSitter } from "../lib/npm/web-tree-sitter.ts";
 import { Language } from "./langs.generated.ts";
 import { getLanguageWasmPath } from "./paths.ts";
 import { buildParser } from "./build.ts";

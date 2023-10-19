@@ -1,6 +1,6 @@
-import { distinct } from "https://deno.land/std@0.204.0/collections/distinct.ts";
-import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
-import { ensure, is } from "https://deno.land/x/unknownutil@v3.10.0/mod.ts";
+import { distinct } from "../lib/std/collections.ts";
+import { $ } from "../lib/x/dax.ts";
+import { ensure, is } from "../lib/x/unknownutil.ts";
 import { throw_ } from "./utils.ts";
 
 export async function fetchGrammarList() {

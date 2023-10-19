@@ -51,7 +51,7 @@ jobs:
 
     env:
       EM_VERSION: 3.1.47
-      EM_CACHE_FOLDER: '~/emsdk-cache'
+      EM_CACHE_FOLDER: '~/.cache/emsdk'
 
     steps:
       - name: Checkout
@@ -70,7 +70,7 @@ jobs:
           key: ${{env.EM_VERSION}}-${{ matrix.os }}
 
       - name: Setup Emscripten
-        uses: mymindstorm/setup-emsdk@v11
+        uses: PikachuHy/setup-emsdk@v11
         if: matrix.os == 'windows-latest' || matrix.os == 'macos-latest'
         with:
           version: ${{env.EM_VERSION}}

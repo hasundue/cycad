@@ -1,4 +1,4 @@
-import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
+import { $ } from "../lib/x/dax.ts";
 import { getTreeSitterCacheDir } from "./paths.ts";
 
 export async function installTreeSitter() {

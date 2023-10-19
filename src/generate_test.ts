@@ -1,6 +1,4 @@
-import {
-  assertSnapshot,
-} from "https://deno.land/std@0.204.0/testing/snapshot.ts";
+import { assertSnapshot } from "../lib/std/testing.ts";
 import { createLanguageSpecMap } from "./generate.ts";
 
 Deno.test("createLanguageSpecs", { ignore: true }, async (t) => {

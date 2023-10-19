@@ -3,7 +3,7 @@
     "run": "deno run --allow-env --allow-read --allow-write=. --allow-run --allow-net=deno.land,registry.npmjs.org,api.github.com,raw.githubusercontent.com",
     "fmt": "deno fmt",
     "lint": "deno lint",
-    "cache": "deno cache ./**/*.ts --lock",
+    "cache": "deno cache ./lib/**/*.ts --lock",
     "lock": "deno task cache --lock-write",
     "build": "deno task -q run src/generate.ts",
     "test": "deno test --allow-env --allow-read --allow-write --allow-run --allow-net",
