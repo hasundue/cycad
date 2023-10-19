@@ -62,7 +62,7 @@ jobs:
         with:
           deno-version: v1.37.2 # denoland/deno
 
-      - name: Setup cache
+      - name: Setup cache for Emscripten
         id: cache-emsdk
         uses: actions/cache@v2
         with:
@@ -70,7 +70,7 @@ jobs:
           key: ${{env.EM_VERSION}}-${{ matrix.os }}
 
       - name: Setup Emscripten
-        uses: PikachuHy/setup-emsdk@v11
+        uses: PikachuHy/setup-emsdk@master
         if: matrix.os == 'windows-latest' || matrix.os == 'macos-latest'
         with:
           version: ${{env.EM_VERSION}}
