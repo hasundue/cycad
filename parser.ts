@@ -4,9 +4,9 @@
  * ## Example
  *
  * ```ts
- * import { parser } from "https://deno.land/x/cycad_sitter{version}/parser.ts?lang=markdown";
+ * import { parser } from "https://deno.land/x/cycad@{version}/parser.ts?lang=typescript";
  *
- * const tree = parser.parse(`Hello, World!`);
+ * const tree = parser.parse(`const x = 1;`);
  * console.log(tree.rootNode.toString());
  * ```
  *
@@ -16,14 +16,11 @@
 import { isLanguage } from "./src/langs.generated.ts";
 import { Parser } from "./src/parser.ts";
 
-export type { Parser } from "./src/parser.ts";
-
 const lang = new URL(import.meta.url).searchParams.get("lang");
 
 if (!lang) {
   throw new Error(`Missing language parameter in URL: ${import.meta.url}`);
 }
-
 if (!isLanguage(lang)) {
   throw new TypeError(`Unknown language: ${lang}`);
 }
