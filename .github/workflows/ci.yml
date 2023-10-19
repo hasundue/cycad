@@ -49,6 +49,10 @@ jobs:
       run:
         shell: bash
 
+    env:
+      EM_VERSION: 3.1.47
+      EM_CACHE_FOLDER: 'emsdk-cache'
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -58,13 +62,21 @@ jobs:
         with:
           deno-version: v1.37.2 # denoland/deno
 
-      - name: Setup Emscripten
-        if: matrix.os == 'windows-latest' || matrix.os == 'macos-latest'
-        uses: mymindstorm/setup-emsdk@v11
+      - name: Setup cache
+        id: cache-emsdk
+        uses: actions/cache@v2
         with:
-          version: 3.1.47
+          path: ${{env.EM_CACHE_FOLDER}}
+          key: ${{env.EM_VERSION}}-${{ runner.os }}
 
-      - name: Cache
+      - name: Setup Emscripten
+        uses: mymindstorm/setup-emsdk@v11
+        if: matrix.os == 'windows-latest' || matrix.os == 'macos-latest'
+        with:
+          version: ${{env.EM_VERSION}}
+          actions-cache-folder: ${{env.EM_CACHE_FOLDER}}
+
+      - name: Cache Deno modules
         run: deno task cache
 
       - name: Run tests
