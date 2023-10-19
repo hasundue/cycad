@@ -22,11 +22,11 @@ export const Parser = {
     // TODO: Should we avoid calling init() multiple times?
     await TreeSitter.init();
 
-    const wasm = getLanguageWasmPath(lang).pathname;
+    const wasm = getLanguageWasmPath(lang);
     if (!$.path(wasm).existsSync()) {
       await buildParser(lang);
     }
-    const Lang = await TreeSitter.Language.load(wasm);
+    const Lang = await TreeSitter.Language.load(wasm.pathname);
 
     const parser = new TreeSitter();
     parser.setLanguage(Lang);

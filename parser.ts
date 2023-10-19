@@ -16,7 +16,7 @@
 import { isLanguage } from "./src/langs.generated.ts";
 import { Parser } from "./src/parser.ts";
 
-export { Parser } from "./src/parser.ts";
+export type { Parser } from "./src/parser.ts";
 
 const lang = new URL(import.meta.url).searchParams.get("lang");
 
