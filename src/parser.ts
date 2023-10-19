@@ -1,6 +1,6 @@
 import { exists } from "https://deno.land/std@0.204.0/fs/exists.ts";
 import TreeSitter from "npm:web-tree-sitter@0.20.8";
-import { isLanguage } from "./langs.generated.ts";
+import { Language } from "./langs.generated.ts";
 import { getLanguagePath } from "./paths.ts";
 import { buildParser } from "./build.ts";
 
@@ -19,22 +19,18 @@ export interface Parser extends TreeSitter {
 
 await TreeSitter.init();
 
-const lang = new URL(import.meta.url).hash.slice(1);
-console.log(lang);
+export const Parser = {
+  async create(lang: Language): Promise<Parser> {
+    const wasm = getLanguagePath(lang);
 
-if (!isLanguage(lang)) {
-  throw new TypeError(`Unknown language: ${lang}`);
-}
+    if (!(await exists(wasm))) {
+      await buildParser(lang);
+    }
+    const Lang = await TreeSitter.Language.load(wasm);
 
-const wasm = getLanguagePath(lang);
+    const _parser = new TreeSitter();
+    _parser.setLanguage(Lang);
 
-if (!(await exists(wasm))) {
-  await buildParser(lang);
-}
-
-const Lang = await TreeSitter.Language.load(wasm);
-
-const _parser = new TreeSitter();
-_parser.setLanguage(Lang);
-
-export const parser: Parser = _parser;
+    return _parser;
+  },
+};
