@@ -3,9 +3,6 @@ export const snapshot = {};
 snapshot[`createLanguageSpecs 1`] = `
 {
   "markdown-inline": {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "markdown",
     language: "markdown_inline",
@@ -13,9 +10,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/MDeiml/tree-sitter-markdown",
   },
   "ocaml-interface": {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "ocaml",
     language: "ocaml-interface",
@@ -23,9 +17,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-ocaml",
   },
   "org-nvim": {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "org",
     language: "org",
@@ -33,9 +24,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/milisims/tree-sitter-org",
   },
   bash: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "bash",
     language: "bash",
@@ -43,9 +31,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-bash",
   },
   beancount: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "beancount",
     language: "beancount",
@@ -53,9 +38,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/polarmutex/tree-sitter-beancount",
   },
   bibtex: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "bibtex",
     language: "bibtex",
@@ -63,9 +45,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/latex-lsp/tree-sitter-bibtex",
   },
   c: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "c",
     language: "c",
@@ -73,9 +52,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-c-sharp",
   },
   clojure: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "clojure",
     language: "clojure",
@@ -83,9 +59,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/sogaiu/tree-sitter-clojure",
   },
   cmake: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "cmake",
     language: "cmake",
@@ -93,9 +66,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/uyha/tree-sitter-cmake",
   },
   comment: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "comment",
     language: "comment",
@@ -103,9 +73,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/stsewd/tree-sitter-comment",
   },
   commonlisp: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "commonlisp",
     language: "commonlisp",
@@ -113,9 +80,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/thehamsta/tree-sitter-commonlisp",
   },
   cpp: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "cpp",
     language: "cpp",
@@ -123,9 +87,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-cpp",
   },
   css: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "css",
     language: "css",
@@ -133,9 +94,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-css",
   },
   cuda: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "cuda",
     language: "cuda",
@@ -143,9 +101,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/thehamsta/tree-sitter-cuda",
   },
   cue: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "cue",
     language: "cue",
@@ -153,9 +108,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/eonpatapon/tree-sitter-cue",
   },
   dart: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "dart",
     language: "dart",
@@ -163,9 +115,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/usernobody14/tree-sitter-dart",
   },
   devicetree: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "devicetree",
     language: "devicetree",
@@ -173,9 +122,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/joelspadin/tree-sitter-devicetree",
   },
   dockerfile: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "dockerfile",
     language: "dockerfile",
@@ -183,9 +129,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/camdencheek/tree-sitter-dockerfile",
   },
   dot: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "dot",
     language: "dot",
@@ -193,9 +136,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/rydesun/tree-sitter-dot",
   },
   eex: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "eex",
     language: "eex",
@@ -203,9 +143,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/connorlay/tree-sitter-eex",
   },
   elisp: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "elisp",
     language: "elisp",
@@ -213,9 +150,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/wilfred/tree-sitter-elisp",
   },
   elixir: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "elixir",
     language: "elixir",
@@ -223,9 +157,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/elixir-lang/tree-sitter-elixir",
   },
   elm: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "elm",
     language: "elm",
@@ -233,9 +164,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/elm-tooling/tree-sitter-elm",
   },
   embedded: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "embedded",
     language: "embedded",
@@ -243,9 +171,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-embedded-template",
   },
   erlang: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "erlang",
     language: "erlang",
@@ -253,9 +178,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/abstractmachineslab/tree-sitter-erlang",
   },
   fennel: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "fennel",
     language: "fennel",
@@ -263,9 +185,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/travonted/tree-sitter-fennel",
   },
   fish: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "fish",
     language: "fish",
@@ -273,9 +192,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/ram02z/tree-sitter-fish",
   },
   fortran: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "fortran",
     language: "fortran",
@@ -283,9 +199,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/stadelmanma/tree-sitter-fortran",
   },
   gdscript: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "gdscript",
     language: "gdscript",
@@ -293,9 +206,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/prestonknopp/tree-sitter-gdscript",
   },
   glimmer: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "glimmer",
     language: "glimmer",
@@ -303,9 +213,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/alexlafroscia/tree-sitter-glimmer",
   },
   glsl: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "glsl",
     language: "glsl",
@@ -313,9 +220,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/thehamsta/tree-sitter-glsl",
   },
   go: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "go",
     language: "go",
@@ -323,9 +227,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-go",
   },
   godot: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "godot",
     language: "godot",
@@ -333,9 +234,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/prestonknopp/tree-sitter-godot-resource",
   },
   gomod: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "gomod",
     language: "gomod",
@@ -343,9 +241,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/camdencheek/tree-sitter-go-mod",
   },
   gowork: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "gowork",
     language: "gowork",
@@ -353,9 +248,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/omertuc/tree-sitter-go-work",
   },
   graphql: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "graphql",
     language: "graphql",
@@ -363,9 +255,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/bkegley/tree-sitter-graphql",
   },
   haskell: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "haskell",
     language: "haskell",
@@ -373,9 +262,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-haskell",
   },
   hcl: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "hcl",
     language: "hcl",
@@ -383,9 +269,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/MichaHoffmann/tree-sitter-hcl",
   },
   heex: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "heex",
     language: "heex",
@@ -393,9 +276,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/connorlay/tree-sitter-heex",
   },
   hjson: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "hjson",
     language: "hjson",
@@ -403,9 +283,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/winston0410/tree-sitter-hjson",
   },
   html: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "html",
     language: "html",
@@ -413,9 +290,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-html",
   },
   http: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "http",
     language: "http",
@@ -423,9 +297,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/ntbbloodbath/tree-sitter-http",
   },
   janet: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "janet",
     language: "janet",
@@ -433,9 +304,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/sogaiu/tree-sitter-janet-simple",
   },
   java: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "java",
     language: "java",
@@ -443,9 +311,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-java",
   },
   javascript: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "javascript",
     language: "javascript",
@@ -453,9 +318,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-javascript",
   },
   jsdoc: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "jsdoc",
     language: "jsdoc",
@@ -463,9 +325,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-jsdoc",
   },
   json5: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "json5",
     language: "json5",
@@ -473,9 +332,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/joakker/tree-sitter-json5",
   },
   json: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "json",
     language: "json",
@@ -483,9 +339,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-json",
   },
   jsonnet: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "jsonnet",
     language: "jsonnet",
@@ -493,9 +346,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/sourcegraph/tree-sitter-jsonnet",
   },
   julia: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "julia",
     language: "julia",
@@ -503,9 +353,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-julia",
   },
   kotlin: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "kotlin",
     language: "kotlin",
@@ -513,9 +360,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/fwcd/tree-sitter-kotlin",
   },
   latex: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "latex",
     language: "latex",
@@ -523,9 +367,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/latex-lsp/tree-sitter-latex",
   },
   ledger: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "ledger",
     language: "ledger",
@@ -533,9 +374,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/cbarrete/tree-sitter-ledger",
   },
   llvm: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "llvm",
     language: "llvm",
@@ -543,9 +381,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/benwilliamgraham/tree-sitter-llvm",
   },
   lua: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "lua",
     language: "lua",
@@ -553,9 +388,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/MunifTanjim/tree-sitter-lua",
   },
   make: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "make",
     language: "make",
@@ -563,9 +395,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/alemuller/tree-sitter-make",
   },
   markdown: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "markdown",
     language: "markdown",
@@ -573,9 +402,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/MDeiml/tree-sitter-markdown",
   },
   nickel: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "nickel",
     language: "nickel",
@@ -583,9 +409,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/nickel-lang/tree-sitter-nickel",
   },
   nix: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "nix",
     language: "nix",
@@ -593,9 +416,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/cstrahan/tree-sitter-nix",
   },
   norg: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "norg",
     language: "norg",
@@ -603,9 +423,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/nvim-neorg/tree-sitter-norg",
   },
   nu: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "nu",
     language: "nu",
@@ -613,9 +430,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/LhKipp/tree-sitter-nu",
   },
   ocaml: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "ocaml",
     language: "ocaml",
@@ -623,9 +437,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-ocaml",
   },
   org: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "org",
     language: "org",
@@ -633,9 +444,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/milisims/tree-sitter-org",
   },
   perl: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "perl",
     language: "perl",
@@ -643,9 +451,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/ganezdragon/tree-sitter-perl",
   },
   pgn: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "pgn",
     language: "pgn",
@@ -653,9 +458,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/rolandwalker/tree-sitter-pgn",
   },
   php: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "php",
     language: "php",
@@ -663,9 +465,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-php",
   },
   pioasm: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "pioasm",
     language: "pioasm",
@@ -673,9 +472,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/leo60228/tree-sitter-pioasm",
   },
   prisma: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "prisma",
     language: "prisma",
@@ -683,9 +479,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/victorhqc/tree-sitter-prisma",
   },
   proto: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "proto",
     language: "proto",
@@ -693,9 +486,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/mitchellh/tree-sitter-proto",
   },
   pug: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "pug",
     language: "pug",
@@ -703,9 +493,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/zealot128/tree-sitter-pug",
   },
   python: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "python",
     language: "python",
@@ -713,9 +500,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-python",
   },
   ql: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "ql",
     language: "ql",
@@ -723,9 +507,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-ql-dbscheme",
   },
   query: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "query",
     language: "query",
@@ -733,9 +514,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/nvim-treesitter/tree-sitter-query",
   },
   r: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "r",
     language: "r",
@@ -743,9 +521,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/r-lib/tree-sitter-r",
   },
   razor: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "razor",
     language: "razor",
@@ -753,9 +528,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-razor",
   },
   regex: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "regex",
     language: "regex",
@@ -763,9 +535,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-regex",
   },
   rego: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "rego",
     language: "rego",
@@ -773,9 +542,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/FallenAngel97/tree-sitter-rego",
   },
   rst: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "rst",
     language: "rst",
@@ -783,9 +549,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/stsewd/tree-sitter-rst",
   },
   ruby: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "ruby",
     language: "ruby",
@@ -793,9 +556,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-ruby",
   },
   rust: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "rust",
     language: "rust",
@@ -803,9 +563,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-rust",
   },
   scala: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "scala",
     language: "scala",
@@ -813,9 +570,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-scala",
   },
   scheme: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "scheme",
     language: "scheme",
@@ -823,9 +577,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/6cdh/tree-sitter-scheme",
   },
   scss: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "scss",
     language: "scss",
@@ -833,9 +584,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/serenadeai/tree-sitter-scss",
   },
   smithy: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "smithy",
     language: "smithy",
@@ -843,9 +591,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/indoorvivants/tree-sitter-smithy",
   },
   solidity: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "solidity",
     language: "solidity",
@@ -853,9 +598,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/JoranHonig/tree-sitter-solidity",
   },
   sparql: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "sparql",
     language: "sparql",
@@ -863,9 +605,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/bonabeavis/tree-sitter-sparql",
   },
   sql: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "sql",
     language: "sql",
@@ -873,9 +612,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/derekstride/tree-sitter-sql",
   },
   supercollider: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "supercollider",
     language: "supercollider",
@@ -883,9 +619,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/madskjeldgaard/tree-sitter-supercollider",
   },
   surface: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "surface",
     language: "surface",
@@ -893,9 +626,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/connorlay/tree-sitter-surface",
   },
   svelte: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "svelte",
     language: "svelte",
@@ -903,9 +633,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/Himujjal/tree-sitter-svelte",
   },
   tiger: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "tiger",
     language: "tiger",
@@ -913,9 +640,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/ambroisie/tree-sitter-tiger",
   },
   tlaplus: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "tlaplus",
     language: "tlaplus",
@@ -923,9 +647,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tlaplus-community/tree-sitter-tlaplus",
   },
   toml: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "toml",
     language: "toml",
@@ -933,9 +654,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-toml",
   },
   tsq: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "tsq",
     language: "tsq",
@@ -943,9 +661,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-tsq",
   },
   tsx: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "typescript",
     language: "tsx",
@@ -953,9 +668,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-typescript",
   },
   turtle: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "turtle",
     language: "turtle",
@@ -963,9 +675,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/bonabeavis/tree-sitter-turtle",
   },
   typescript: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "typescript",
     language: "typescript",
@@ -973,9 +682,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-typescript",
   },
   typst: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: true,
     grammar: "typst",
     language: "typst",
@@ -983,9 +689,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/uben0/tree-sitter-typst",
   },
   verilog: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "verilog",
     language: "verilog",
@@ -993,9 +696,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/tree-sitter/tree-sitter-verilog",
   },
   vim: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "vim",
     language: "vim",
@@ -1003,9 +703,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/vigoux/tree-sitter-viml",
   },
   vue: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "vue",
     language: "vue",
@@ -1013,9 +710,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/ikatyang/tree-sitter-vue",
   },
   wing: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: true,
     grammar: "wing",
     language: "wing",
@@ -1023,9 +717,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/winglang/wing",
   },
   yaml: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "yaml",
     language: "yaml",
@@ -1033,9 +724,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/ikatyang/tree-sitter-yaml",
   },
   yang: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "yang",
     language: "yang",
@@ -1043,9 +731,6 @@ snapshot[`createLanguageSpecs 1`] = `
     url: "https://github.com/hubro/tree-sitter-yang",
   },
   zig: {
-    deepClone: false,
-    fetchLFS: false,
-    fetchSubmodules: false,
     generate: false,
     grammar: "zig",
     language: "zig",

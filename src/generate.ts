@@ -1,10 +1,6 @@
 import { distinct } from "https://deno.land/std@0.204.0/collections/distinct.ts";
 import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
-import {
-  ensure,
-  is,
-  PredicateType,
-} from "https://deno.land/x/unknownutil@v3.10.0/mod.ts";
+import { ensure, is } from "https://deno.land/x/unknownutil@v3.10.0/mod.ts";
 import { throw_ } from "./utils.ts";
 
 export async function fetchGrammarList() {
@@ -78,13 +74,14 @@ const LanguageSpecOverlays: Record<string, LanguageSpecOverlay | undefined> = {
 
 const isGrammarJson = is.ObjectOf({
   url: is.String,
-  fetchLFS: is.OptionalOf(is.Boolean),
-  fetchSubmodules: is.OptionalOf(is.Boolean),
-  deepClone: is.OptionalOf(is.Boolean),
+  fetchLFS: is.OptionalOf(is.LiteralOf(false)),
+  fetchSubmodules: is.OptionalOf(is.LiteralOf(false)),
+  deepClone: is.OptionalOf(is.LiteralOf(false)),
 });
 
-type GrammarJson = Required<PredicateType<typeof isGrammarJson>> & {
+type GrammarJson = {
   grammar: string;
+  url: string;
 };
 
 async function fetchGrammarJson(
@@ -105,9 +102,6 @@ async function fetchGrammarJson(
   return {
     grammar: parseGrammerName(grammar),
     url: json.url,
-    fetchLFS: json.fetchLFS ?? false,
-    fetchSubmodules: json.fetchSubmodules ?? false,
-    deepClone: json.deepClone ?? false,
   };
 }
 
@@ -115,7 +109,10 @@ async function fetchGrammarJsons(
   grammars: string[],
 ): Promise<GrammarJson[]> {
   const jsons: GrammarJson[] = [];
-  const progbar = $.progress({ length: grammars.length });
+  const progbar = $.progress(
+    `Fetching metadata for grammars fron nixpkgs repository`,
+    { length: grammars.length },
+  );
   await progbar.with(async () => {
     // We can't use Promise.all because GitHub will rate limit us
     for (const grammar of grammars) {
@@ -167,12 +164,12 @@ export const isLanguage = (lang: string): lang is Language => {
   return lang in LanguageSpecMap;
 };
 `;
+  const dest = new URL("./langs.generated.ts", import.meta.url);
   await Deno.writeTextFile(
-    new URL("./langs.generated.ts", import.meta.url),
+    dest,
     content,
   );
-  $.cd(import.meta);
-  await $`deno fmt ./langs.generated.ts`.stderr("null");
+  await $`deno fmt ${dest}`.stderr("null");
 }
 
 if (import.meta.main) {

@@ -1,7 +1,7 @@
 import { exists } from "https://deno.land/std@0.204.0/fs/exists.ts";
 import TreeSitter from "npm:web-tree-sitter@0.20.8";
 import { Language } from "./langs.generated.ts";
-import { getLanguagePath } from "./paths.ts";
+import { getLanguageWasmPath } from "./locations.ts";
 import { buildParser } from "./build.ts";
 
 export interface Parser extends TreeSitter {
@@ -17,20 +17,20 @@ export interface Parser extends TreeSitter {
   getTimeoutMicros(): number;
 }
 
-await TreeSitter.init();
-
 export const Parser = {
   async create(lang: Language): Promise<Parser> {
-    const wasm = getLanguagePath(lang);
+    // TODO: Should we avoid calling init() multiple times?
+    await TreeSitter.init();
 
+    const wasm = getLanguageWasmPath(lang).pathname;
     if (!(await exists(wasm))) {
       await buildParser(lang);
     }
     const Lang = await TreeSitter.Language.load(wasm);
 
-    const _parser = new TreeSitter();
-    _parser.setLanguage(Lang);
+    const parser = new TreeSitter();
+    parser.setLanguage(Lang);
 
-    return _parser;
+    return parser;
   },
 };

@@ -1,5 +1,5 @@
 import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
-import { getTreeSitterCacheDir } from "./paths.ts";
+import { getTreeSitterCacheDir } from "./locations.ts";
 
 export async function installTreeSitter() {
   // Cache tree-sitter-cli
@@ -10,9 +10,9 @@ export async function installTreeSitter() {
     .with(async () => await $`deno cache ${path}`.quiet());
 
   // Install tree-sitter executable
-  $.cd(await getTreeSitterCacheDir());
+  const dir = await getTreeSitterCacheDir();
   await $.progress(`Installing tree-sitter executable`)
-    .with(async () => await $`deno task install`.quiet());
+    .with(async () => await $`deno task install`.cwd(dir).quiet());
 }
 
 if (import.meta.main) {
