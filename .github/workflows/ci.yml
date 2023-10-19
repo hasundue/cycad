@@ -51,7 +51,7 @@ jobs:
 
     env:
       EM_VERSION: 3.1.47
-      EM_CACHE_FOLDER: '../emsdk-cache'
+      EM_CACHE_FOLDER: '~/emsdk-cache'
 
     steps:
       - name: Checkout
@@ -67,7 +67,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ${{env.EM_CACHE_FOLDER}}
-          key: ${{env.EM_VERSION}}-${{ runner.os }}
+          key: ${{env.EM_VERSION}}-${{ matrix.os }}
 
       - name: Setup Emscripten
         uses: mymindstorm/setup-emsdk@v11
