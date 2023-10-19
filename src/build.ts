@@ -5,11 +5,11 @@ import {
   getLanguageDir,
   getTreeSitterExecutablePath,
   getVendorDir,
-} from "./locations.ts";
+} from "./paths.ts";
 
 export async function buildParser(lang: Language, dist = "./dist") {
   const spec = LanguageSpecMap[lang];
-  const vendor = getVendorDir(lang).pathname;
+  const vendor = getVendorDir(lang);
   try {
     // Clone repository
     await $`mkdir -p ${vendor}`;
@@ -25,9 +25,7 @@ export async function buildParser(lang: Language, dist = "./dist") {
   dist = resolve(dist);
   await $`mkdir -p ${dist}`;
   await $.progress(`Building ${lang} parser`)
-    .with(async () =>
-      await $`${bin.pathname} build-wasm ${dir.pathname}`.cwd(dist)
-    );
+    .with(async () => await $`${bin} build-wasm ${dir}`.cwd(dist));
 }
 
 if (import.meta.main) {

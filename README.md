@@ -17,7 +17,10 @@ Cycad is a helper module for using [Tree-sitter][tree-sitter] in [Deno][deno].
 ```typescript
 import { Parser } from "https://deno.land/x/cycad@{VERSION}/mod.ts";
 
+// Parser for TypeScript will be fetched and compiled automatically!
+// It may take a while for the first run.
 const parser = await Parser.create("typescript");
+
 const tree = parser.parse("const x = 1;");
 console.log(tree.rootNode.toString());
 ```

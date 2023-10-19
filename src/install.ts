@@ -1,10 +1,10 @@
 import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
-import { getTreeSitterCacheDir } from "./locations.ts";
+import { getTreeSitterCacheDir } from "./paths.ts";
 
 export async function installTreeSitter() {
   // Cache tree-sitter-cli
   const url = new URL("./deps.ts", import.meta.url);
-  const path = url.protocol === "file:" ? url.pathname : url.href;
+  const path = $.path(url).resolve();
 
   await $.progress(`Caching npm:tree-sitter-cli`)
     .with(async () => await $`deno cache ${path}`.quiet());
