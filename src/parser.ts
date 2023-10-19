@@ -1,4 +1,3 @@
-import $ from "https://deno.land/x/dax@0.35.0/mod.ts";
 import TreeSitter from "npm:web-tree-sitter@0.20.8";
 import { Language } from "./langs.generated.ts";
 import { getLanguageWasmPath } from "./paths.ts";
@@ -23,10 +22,10 @@ export const Parser = {
     await TreeSitter.init();
 
     const wasm = getLanguageWasmPath(lang);
-    if (!$.path(wasm).existsSync()) {
+    if (await wasm.exists() === false) {
       await buildParser(lang);
     }
-    const Lang = await TreeSitter.Language.load(wasm.resolve().toString());
+    const Lang = await TreeSitter.Language.load(wasm.toString());
 
     const parser = new TreeSitter();
     parser.setLanguage(Lang);
