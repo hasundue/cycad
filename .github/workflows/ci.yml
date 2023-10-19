@@ -58,6 +58,13 @@ jobs:
         with:
           deno-version: v1.37.2 # denoland/deno
 
+      - name: Setup Emscripten
+        if: matrix.os == 'windows-latest' || matrix.os == 'macos-latest'
+        uses: mymindstorm/setup-emsdk@v11
+        with:
+          version: 3.1.47
+          actions-cache-folder: 'emsdk-cache'
+
       - name: Cache
         run: deno task cache
 
